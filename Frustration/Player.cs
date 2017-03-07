@@ -29,22 +29,27 @@ namespace Frustration
             }
         }
 
-        public Piece SelectPiece(int i)
-        {
-            return pieces.ElementAt(i);
-        }
-
-        public List<Piece> GetAvailablePieces(int moveLength)
+        public List<Piece> GetAvailablePieces(int diceValue)
         {
             List<Piece> availablePieces = new List<Piece>();
             foreach (var item in pieces)
             {
-                if (item.IsAvailable(moveLength))
+                if (item.IsAvailable(diceValue))
                 {
                     availablePieces.Add(item);
                 }
             }
             return availablePieces;
+        }
+
+        public Boolean CheckForWinner()
+        {
+            Boolean hasWon = false;
+            foreach (var item in pieces)
+            {
+                hasWon = item.State.Equals(PieceState.Finish);
+            }
+            return hasWon;
         }
     }
 }

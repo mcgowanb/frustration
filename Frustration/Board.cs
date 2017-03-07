@@ -34,7 +34,7 @@ namespace Frustration
             }
         }
 
-        public Piece Move(Piece p, int steps)
+        public Piece Move(Piece p, int diceValue)
         {
             //check the board for an existing piece at that location
             //if found, return the piece at that location

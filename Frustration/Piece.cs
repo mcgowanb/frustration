@@ -10,6 +10,8 @@ namespace Frustration
     enum Colour { Red, Yellow, Green, Blue }
     class Piece
     {
+        private const int BOARD_MOVES = 28;
+        private const int HOME_SPACES = 4;
         public PieceState State { get; private set; }
         public int Position { get; private set; }
         public Colour Colour { get; private set; }
@@ -20,34 +22,39 @@ namespace Frustration
             Colour = pc;
         }
 
-        public Boolean Move(int steps)
+        public Boolean Move(int diceValue)
         {
             Boolean complete = false;
-            if (Position + steps <= Board.RegularPlaces)
+            //if 6 and home
+            if (diceValue == 6 && this.State.Equals(PieceState.Home))
             {
-                Position += steps;
+                complete = MoveOntoBoard();
+            }
+            else if (Position + diceValue <= BOARD_MOVES)
+            {
+                Position += diceValue;
                 complete = true;
             }
-            else if (Position + steps <= Board.BOARD_SPACES)
+            else if (Position + diceValue <= BOARD_MOVES + HOME_SPACES)
             {
                 State = PieceState.Safe;
-                Position += steps;
+                Position += diceValue;
                 complete = true;
             }
 
             return complete;
         }
 
-        public Boolean IsAvailable(int steps)
+        public Boolean IsAvailable(int diceRoll)
         {
-            Boolean available = false;
+            bool available = false;
 
-            if (State.Equals(PieceState.Home) && steps == 6)
+            if (State.Equals(PieceState.Home) && diceRoll == 6)
             {
                 available = true;
             }
 
-            else if ((State.Equals(PieceState.Playing) || State.Equals(PieceState.Safe)) && Position + steps <= Board.BOARD_SPACES)
+            else if ((State.Equals(PieceState.Playing) || State.Equals(PieceState.Safe)) && Position + diceRoll <= BOARD_MOVES + HOME_SPACES)
             {
                 available = true;
             }
@@ -58,6 +65,13 @@ namespace Frustration
         {
             State = PieceState.Home;
             Position = 0;
+        }
+
+        public bool MoveOntoBoard()
+        {
+            State = PieceState.Playing;
+            Position = 0;
+            return true;
         }
 
     }

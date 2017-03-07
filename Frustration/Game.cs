@@ -9,12 +9,15 @@ namespace Frustration
     class Game
     {
         List<Player> players;
+        List<Player> winners;
+
         const int MAX_PLAYERS = 4;
         Dice dice;
 
         public Game(int nPlayers)
         {
             players = new List<Player>();
+            winners = new List<Player>();
             dice = new Dice();
             //create players
             //take turn
@@ -23,9 +26,38 @@ namespace Frustration
             //move piece
         }
 
+        public void PlayGame()
+        {
+            while (true)
+            {
+                foreach (var player in players)
+                {
+                    if (TakeTurn(player))
+                    {
+                        players.Remove(player);
+                        winners.Add(player);
+                    }
+                }
+            }
+
+        }
+
+        public Boolean TakeTurn(Player player)
+        {
+            Boolean hasWon = false;
+            int diceValue = dice.Roll();
+            List<Piece> availablePieces = player.GetAvailablePieces(diceValue);
+            Piece piece = availablePieces.ElementAt(0);
+            piece.Move(diceValue);
+            //move on the board
+            hasWon = player.CheckForWinner();
+
+            return hasWon;
+        }
+
         public void AddPlayer(Colour c)
         {
-            if(players.Count <= MAX_PLAYERS)
+            if (players.Count < MAX_PLAYERS)
             {
                 Player p = new Player(c, GetPlayerOffset());
                 players.Add(p);
@@ -52,7 +84,7 @@ namespace Frustration
             return offset;
         }
 
-        public Piece[] CheckAvailablePieces(Player p, int moveLength)
+        public List<Piece> CheckAvailablePieces(Player p, int diceRoll)
         {
             List<Piece> l = new List<Piece>();
             foreach (var item in p.pieces)
@@ -64,7 +96,7 @@ namespace Frustration
             }
 
             //add pieces that match criteria here
-            return l.ToArray();
+            return l;
             //throw new NotImplementedException();
         }
     }

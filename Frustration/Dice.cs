@@ -14,7 +14,7 @@ namespace Frustration
         {
             RandomFactory = new Random();
         }
-        public int RollDice()
+        public int Roll()
         {
             return RandomFactory.Next(DICE_LIMIT + 1);
         }
