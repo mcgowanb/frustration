@@ -10,7 +10,7 @@ namespace Frustration
     {
         public const int BOARD_SPACES = 32;
         const int HOME_SPACES = 4;
-        int[] locations;
+        Piece[] locations;
 
         public static int RegularPlaces
         {
@@ -27,19 +27,20 @@ namespace Frustration
 
         private void InitialiseLocations()
         {
-            locations = new int[BOARD_SPACES];
-            for (int i = 0; i < BOARD_SPACES; i++)
-            {
-                locations[i] = i;
-            }
+            locations = new Piece[BOARD_SPACES];
         }
 
-        public Piece Move(Piece p, int diceValue)
+        public Piece Move(Piece playerPiece, int diceValue)
         {
-            //check the board for an existing piece at that location
-            //if found, return the piece at that location
-            //else return null
-            throw new NotImplementedException();
+            Piece boardPiece = locations[playerPiece.Position];
+            if (boardPiece != null)
+            {
+                return locations[playerPiece.Position];
+            }
+            else locations[playerPiece.Position] = playerPiece;
+
+            return boardPiece;
+
         }
 
 
