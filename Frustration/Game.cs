@@ -47,8 +47,11 @@ namespace Frustration
             Boolean hasWon = false;
             int diceValue = dice.Roll();
             List<Piece> availablePieces = player.GetAvailablePieces(diceValue);
+            //player select piece here
             Piece piece = availablePieces.ElementAt(0);
+
             piece.Move(diceValue);
+            //if piece state has changed from playing to home, remove from the board else do nothing on the board
             //move on the board
             hasWon = player.CheckForWinner();
 
@@ -84,20 +87,20 @@ namespace Frustration
             return offset;
         }
 
-        public List<Piece> CheckAvailablePieces(Player p, int diceRoll)
-        {
-            List<Piece> l = new List<Piece>();
-            foreach (var item in p.pieces)
-            {
-                //check all player pieces
-                //get piece
-                //check remaining spaces left
-                //return ones available for play
-            }
+        //public List<Piece> CheckAvailablePieces(Player p, int diceRoll)
+        //{
+        //    List<Piece> l = new List<Piece>();
+        //    foreach (var item in p.pieces)
+        //    {
+        //        //check all player pieces
+        //        //get piece
+        //        //check remaining spaces left
+        //        //return ones available for play
+        //    }
 
-            //add pieces that match criteria here
-            return l;
-            //throw new NotImplementedException();
-        }
+        //    //add pieces that match criteria here
+        //    return l;
+        //    //throw new NotImplementedException();
+        //}
     }
 }

@@ -8,6 +8,7 @@ namespace Frustration
 {
     class Board
     {
+        // to be changed
         public const int BOARD_SPACES = 32;
         const int HOME_SPACES = 4;
         Piece[] locations;
@@ -30,15 +31,20 @@ namespace Frustration
             locations = new Piece[BOARD_SPACES];
         }
 
-        public Piece Move(Piece playerPiece, int diceValue)
+        public Piece Move(Piece playerPiece, int diceValue, int playerOffset)
         {
-            Piece boardPiece = locations[playerPiece.Position];
+            int absoluteMove = playerPiece.Position + diceValue + playerOffset;
+            if(absoluteMove > locations.Length)
+            {
+                absoluteMove -= locations.Length;
+            }
+            Piece boardPiece = locations[absoluteMove];
             if (boardPiece != null)
             {
                 return locations[playerPiece.Position];
             }
             else locations[playerPiece.Position] = playerPiece;
-
+            //if a piece has moved to home, remove from the board
             return boardPiece;
 
         }

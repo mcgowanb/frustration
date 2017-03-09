@@ -47,6 +47,7 @@ namespace Frustration
             Boolean hasWon = false;
             foreach (var item in pieces)
             {
+                //incorrect
                 hasWon = item.State.Equals(PieceState.Finish);
             }
             return hasWon;
