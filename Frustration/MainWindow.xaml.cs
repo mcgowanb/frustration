@@ -13,10 +13,6 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-//  Super - Thanks Brian 
-//  Testing git....
-
-
 namespace Frustration
 {
     /// <summary>
@@ -24,9 +20,17 @@ namespace Frustration
     /// </summary>
     public partial class MainWindow : Window
     {
+        Game game;
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnNewGame_Click(object sender, RoutedEventArgs e)
+        {
+            int n = Convert.ToInt32(txtNoPlayers.Text);
+            game = new Game(n);
+            game.PlayGame();
         }
     }
 }

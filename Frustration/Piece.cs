@@ -10,8 +10,7 @@ namespace Frustration
     enum Colour { Red, Yellow, Green, Blue }
     class Piece
     {
-        private const int BOARD_MOVES = 28;
-        private const int HOME_SPACES = 4;
+        
         public PieceState State { get; private set; }
         public int Position { get; private set; }
         public Colour Colour { get; private set; }
@@ -30,12 +29,12 @@ namespace Frustration
             {
                 complete = MoveOntoBoard();
             }
-            else if (Position + diceValue <= BOARD_MOVES)
+            else if (Position + diceValue <= Game.BOARD_MOVES)
             {
                 Position += diceValue;
                 complete = true;
             }
-            else if (Position + diceValue <= BOARD_MOVES + HOME_SPACES)
+            else if (Position + diceValue <= Game.BOARD_MOVES + Game.HOME_SPACES)
             {
                 State = PieceState.Safe;
                 Position += diceValue;
@@ -54,7 +53,7 @@ namespace Frustration
                 available = true;
             }
 
-            else if ((State.Equals(PieceState.Playing) || State.Equals(PieceState.Safe)) && Position + diceRoll <= BOARD_MOVES + HOME_SPACES)
+            else if ((State.Equals(PieceState.Playing) || State.Equals(PieceState.Safe)) && Position + diceRoll <= Game.BOARD_MOVES + Game.HOME_SPACES)
             {
                 available = true;
             }

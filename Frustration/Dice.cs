@@ -16,7 +16,7 @@ namespace Frustration
         }
         public int Roll()
         {
-            return RandomFactory.Next(DICE_LIMIT + 1);
+            return RandomFactory.Next(1, DICE_LIMIT + 1);
         }
     }
 }

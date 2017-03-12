@@ -10,8 +10,11 @@ namespace Frustration
     {
         List<Player> players;
         List<Player> winners;
+        Board board;
 
         const int MAX_PLAYERS = 4;
+        internal const int BOARD_MOVES = 28;
+        internal const int HOME_SPACES = 4;
         Dice dice;
 
         public Game(int nPlayers)
@@ -19,6 +22,8 @@ namespace Frustration
             players = new List<Player>();
             winners = new List<Player>();
             dice = new Dice();
+            board = new Board();
+            CreatePlayers(nPlayers);
             //create players
             //take turn
             //roll dice
@@ -28,34 +33,46 @@ namespace Frustration
 
         public void PlayGame()
         {
-            while (true)
+            while (players.Count > 1)
             {
                 foreach (var player in players)
                 {
-                    if (TakeTurn(player))
+                    TakeTurn(player);
+                    if (player.CheckForWinner())
                     {
                         players.Remove(player);
                         winners.Add(player);
                     }
                 }
             }
+            //game over summary
 
         }
 
-        public Boolean TakeTurn(Player player)
+        public void TakeTurn(Player player)
         {
-            Boolean hasWon = false;
+            bool rollAgain = false;
             int diceValue = dice.Roll();
+            if (diceValue == 6)
+                rollAgain = true;
             List<Piece> availablePieces = player.GetAvailablePieces(diceValue);
+
+            if (availablePieces.Count == 0)
+                return;
             //player select piece here
             Piece piece = availablePieces.ElementAt(0);
 
             piece.Move(diceValue);
+            //return the dice value here, as if its changing state from outside to inside then the move becomes 1 instead of 6
+
+            Piece returnPiece = board.Move(piece, diceValue, player.Offset);
+            if (returnPiece != null)
+                returnPiece.ReturnHome();
+
+            if (rollAgain)
+                TakeTurn(player);
             //if piece state has changed from playing to home, remove from the board else do nothing on the board
             //move on the board
-            hasWon = player.CheckForWinner();
-
-            return hasWon;
         }
 
         public void AddPlayer(Colour c)
@@ -82,25 +99,20 @@ namespace Frustration
                     offset = 21;
                     break;
                 default:
+                    offset = 0;
                     break;
             }
             return offset;
         }
 
-        //public List<Piece> CheckAvailablePieces(Player p, int diceRoll)
-        //{
-        //    List<Piece> l = new List<Piece>();
-        //    foreach (var item in p.pieces)
-        //    {
-        //        //check all player pieces
-        //        //get piece
-        //        //check remaining spaces left
-        //        //return ones available for play
-        //    }
+        private void CreatePlayers(int n)
+        {
+            Colour[] colours = { Colour.Blue, Colour.Green, Colour.Red, Colour.Yellow };
+            for (int i = 0; i < n; i++)
+            {
+                players.Add(new Player(colours[i], GetPlayerOffset()));
+            }
+        }
 
-        //    //add pieces that match criteria here
-        //    return l;
-        //    //throw new NotImplementedException();
-        //}
     }
 }

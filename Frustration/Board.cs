@@ -8,18 +8,7 @@ namespace Frustration
 {
     class Board
     {
-        // to be changed
-        public const int BOARD_SPACES = 32;
-        const int HOME_SPACES = 4;
         Piece[] locations;
-
-        public static int RegularPlaces
-        {
-            get
-            {
-                return BOARD_SPACES - HOME_SPACES;
-            }
-        }
 
         public Board()
         {
@@ -28,22 +17,21 @@ namespace Frustration
 
         private void InitialiseLocations()
         {
-            locations = new Piece[BOARD_SPACES];
+            locations = new Piece[Game.BOARD_MOVES];
         }
 
         public Piece Move(Piece playerPiece, int diceValue, int playerOffset)
         {
-            int absoluteMove = playerPiece.Position + diceValue + playerOffset;
-            if(absoluteMove > locations.Length)
+            int absoluteMove = playerPiece.Position + playerOffset;
+            //moving around the board from 28 round to 0 again
+            if (absoluteMove > locations.Length)
             {
                 absoluteMove -= locations.Length;
             }
+            locations[absoluteMove - diceValue] = null;
             Piece boardPiece = locations[absoluteMove];
-            if (boardPiece != null)
-            {
-                return locations[playerPiece.Position];
-            }
-            else locations[playerPiece.Position] = playerPiece;
+
+            locations[absoluteMove] = playerPiece;
             //if a piece has moved to home, remove from the board
             return boardPiece;
 

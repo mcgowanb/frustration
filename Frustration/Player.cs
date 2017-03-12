@@ -9,6 +9,7 @@ namespace Frustration
     class Player
     {
         const int NUMBER_OF_PIECES = 4;
+
         public List<Piece> pieces { get; private set; }
         public int Offset { get; private set; }
         public int MyProperty { get; set; }
@@ -45,11 +46,7 @@ namespace Frustration
         public Boolean CheckForWinner()
         {
             Boolean hasWon = false;
-            foreach (var item in pieces)
-            {
-                //incorrect
-                hasWon = item.State.Equals(PieceState.Finish);
-            }
+            hasWon = pieces.Any(p => p.State.Equals(PieceState.Finish));
             return hasWon;
         }
     }

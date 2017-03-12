@@ -7,6 +7,18 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="btnNewGame_Click"/>
+        <TextBox x:Name="txtNoPlayers" HorizontalAlignment="Left" Height="23" Margin="170,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="2.132"/>
+                    <RotateTransform/>
+                    <TranslateTransform X="0.428"/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label x:Name="label" Content="No of Players" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,0.769" Margin="90,7,0,0"/>
+
     </Grid>
 </Window>
