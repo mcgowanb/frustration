@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="75" Click="btnNewGame_Click"/>
+        <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="316,10,0,0" VerticalAlignment="Top" Width="75" Click="btnNewGame_Click"/>
         <TextBox x:Name="txtNoPlayers" HorizontalAlignment="Left" Height="23" Margin="170,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
             <TextBox.RenderTransform>
                 <TransformGroup>
@@ -19,6 +19,13 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Label x:Name="label" Content="No of Players" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,0.769" Margin="90,7,0,0"/>
+        <ListBox x:Name="lbxPlayer1" HorizontalAlignment="Left" Height="52" Margin="170,43,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox x:Name="lbxPlayer2" HorizontalAlignment="Left" Height="52" Margin="170,100,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox x:Name="lbxPlayer3" HorizontalAlignment="Left" Height="61" Margin="170,157,0,0" VerticalAlignment="Top" Width="122"/>
+        <ListBox x:Name="lbxPlayer4" HorizontalAlignment="Left" Height="55" Margin="170,234,0,0" VerticalAlignment="Top" Width="122"/>
+        <Button x:Name="btnPlayerRoll1" Content="Roll" HorizontalAlignment="Left" Margin="90,74,0,0" VerticalAlignment="Top" Width="75" Click="btnPlayerRoll1_Click"/>
+        <Label x:Name="lblPlayer1" Content="Player One" HorizontalAlignment="Left" Margin="98,43,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnMovePlayer1" Content="Move" HorizontalAlignment="Left" Margin="297,73,0,0" VerticalAlignment="Top" Width="75" Click="btnMovePlayer1_Click"/>
 
     </Grid>
 </Window>

@@ -21,6 +21,9 @@ namespace Frustration
     public partial class MainWindow : Window
     {
         Game game;
+        Dice dice;
+        Player player;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -30,7 +33,38 @@ namespace Frustration
         {
             int n = Convert.ToInt32(txtNoPlayers.Text);
             game = new Game(n);
-            game.PlayGame();
+
+            lbxPlayer1.ItemsSource = game.players.ElementAt(0).GetAvailablePieces();
+
+
+
+          //  game.PlayGame();
+        }
+
+        public void btnPlayerRoll1_Click(object sender, RoutedEventArgs e)
+        {
+            
+        //  Start Turn
+        //  Roll Dice
+
+       
+
+
+            //  Populate List Box
+
+  // lbxPlayer1.ItemsSource = availablePieces;
+
+
+        }
+
+        private void btnMovePlayer1_Click(object sender, RoutedEventArgs e)
+        {
+            //  Get selected item
+            Piece piece = lbxPlayer1.SelectedItem as Piece;
+
+            //  Move selected piece
+
+            game.MovePiece(piece);
         }
     }
 }

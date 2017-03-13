@@ -8,9 +8,12 @@ namespace Frustration
 {
     class Game
     {
-        List<Player> players;
+        public List<Player> players;
         List<Player> winners;
         Board board;
+        int currentDiceValue;
+        Player currentPlayer;
+        bool rollAgain = false;
 
         const int MAX_PLAYERS = 4;
         internal const int BOARD_MOVES = 28;
@@ -37,46 +40,93 @@ namespace Frustration
             {
                 foreach (var player in players)
                 {
-                    TakeTurn(player);
+                    StartTurn(player);
+
                     if (player.CheckForWinner())
                     {
                         players.Remove(player);
                         winners.Add(player);
                     }
+                    EndTurn(player);
                 }
             }
             //game over summary
 
         }
 
-        public void TakeTurn(Player player)
-        {
-            bool rollAgain = false;
-            //should the user actually physically roll the dice
-            int diceValue = dice.Roll();
-            if (diceValue == 6)
-                rollAgain = true;
-            List<Piece> availablePieces = player.GetAvailablePieces(diceValue);
 
+        //public void StartTurn(Player player)
+        //{
+
+
+        //    bool rollAgain = false;
+        //    //should the user actually physically roll the dice
+        //    int diceValue = dice.Roll();
+        //    if (diceValue == 6)
+        //        rollAgain = true;
+        //    List<Piece> availablePieces = player.GetAvailablePieces(diceValue);
+
+        //    if (availablePieces.Count == 0)
+        //    {
+        //        return;
+        //    }
+
+
+
+        //}
+
+
+        public void StartTurn(Player player)
+        {
+
+
+            //bool rollAgain = false;
+            //should the user actually physically roll the dice
+            currentDiceValue = dice.Roll();
+            if (currentDiceValue == 6)
+                rollAgain = true;
+            List<Piece> availablePieces = player.GetAvailablePieces(currentDiceValue);
+
+
+            //  If nothing available
             if (availablePieces.Count == 0)
             {
                 return;
             }
-            //player select piece here
-            Piece piece = availablePieces.ElementAt(0);
 
-            piece.Move(diceValue);
-            //return the dice value here, as if its changing state from outside to inside then the move becomes 1 instead of 6
 
-            Piece returnPiece = board.Move(piece, diceValue, player.Offset);
-            if (returnPiece != null)
-                returnPiece.ReturnHome();
+
 
             if (rollAgain)
-                TakeTurn(player);
+                StartTurn(player);
             //if piece state has changed from playing to home, remove from the board else do nothing on the board
             //move on the board
         }
+
+        public void MovePiece(Piece piece)
+        {
+            ////player select piece here
+            //Piece piece = availablePieces.ElementAt(0);
+
+            piece.Move(currentDiceValue);
+            //return the dice value here, as if its changing state from outside to inside then the move becomes 1 instead of 6
+
+            Piece returnPiece = board.Move(piece, currentDiceValue, currentPlayer.Offset);
+            if (returnPiece != null)
+                returnPiece.ReturnHome();
+
+        }
+
+
+
+
+        public void EndTurn(Player player)
+        {
+
+            if (rollAgain)
+                StartTurn(player);
+        }
+
 
         public void AddPlayer(Colour c)
         {
