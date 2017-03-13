@@ -28,6 +28,7 @@ namespace Frustration
             {
                 absoluteMove -= locations.Length;
             }
+            //handle out of bounds exception
             locations[absoluteMove - diceValue] = null;
             Piece boardPiece = locations[absoluteMove];
 

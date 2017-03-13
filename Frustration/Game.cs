@@ -52,13 +52,16 @@ namespace Frustration
         public void TakeTurn(Player player)
         {
             bool rollAgain = false;
+            //should the user actually physically roll the dice
             int diceValue = dice.Roll();
             if (diceValue == 6)
                 rollAgain = true;
             List<Piece> availablePieces = player.GetAvailablePieces(diceValue);
 
             if (availablePieces.Count == 0)
+            {
                 return;
+            }
             //player select piece here
             Piece piece = availablePieces.ElementAt(0);
 
