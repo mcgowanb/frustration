@@ -11,7 +11,7 @@ namespace Frustration
         public List<Player> players;
         List<Player> winners;
         Board board;
-        int currentDiceValue;
+        public int CurrentDiceValue { get; private set; }
         Player currentPlayer;
         bool rollAgain = false;
 

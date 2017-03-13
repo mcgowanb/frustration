@@ -21,8 +21,6 @@ namespace Frustration
     public partial class MainWindow : Window
     {
         Game game;
-        Dice dice;
-        Player player;
 
         public MainWindow()
         {
@@ -44,8 +42,8 @@ namespace Frustration
         public void btnPlayerRoll1_Click(object sender, RoutedEventArgs e)
         {
             
-        //  Start Turn
-        //  Roll Dice
+        //  Start Turn - method
+        // update dice roll box with game.CurrentDiceValue
 
        
 
