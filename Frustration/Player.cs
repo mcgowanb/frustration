@@ -16,6 +16,7 @@ namespace Frustration
 
         public Player(Colour c, int offset)
         {
+            //record colour in player
             pieces = new List<Piece>();
             Offset = offset;
             CreatePieces(c);
