@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Frustration"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="MainWindow" Height="719.6" Width="719.4">
     <Grid>
         <Button x:Name="btnNewGame" Content="New Game" HorizontalAlignment="Left" Margin="316,10,0,0" VerticalAlignment="Top" Width="75" Click="btnNewGame_Click"/>
         <TextBox x:Name="txtNoPlayers" HorizontalAlignment="Left" Height="23" Margin="170,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.5,0.5">
@@ -19,13 +19,22 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Label x:Name="label" Content="No of Players" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="3.026,0.769" Margin="90,7,0,0"/>
-        <ListBox x:Name="lbxPlayer1" HorizontalAlignment="Left" Height="52" Margin="170,43,0,0" VerticalAlignment="Top" Width="122"/>
-        <ListBox x:Name="lbxPlayer2" HorizontalAlignment="Left" Height="52" Margin="170,100,0,0" VerticalAlignment="Top" Width="122"/>
-        <ListBox x:Name="lbxPlayer3" HorizontalAlignment="Left" Height="61" Margin="170,157,0,0" VerticalAlignment="Top" Width="122"/>
-        <ListBox x:Name="lbxPlayer4" HorizontalAlignment="Left" Height="55" Margin="170,234,0,0" VerticalAlignment="Top" Width="122"/>
-        <Button x:Name="btnPlayerRoll1" Content="Roll" HorizontalAlignment="Left" Margin="90,74,0,0" VerticalAlignment="Top" Width="75" Click="btnPlayerRoll1_Click"/>
-        <Label x:Name="lblPlayer1" Content="Player One" HorizontalAlignment="Left" Margin="98,43,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="btnMovePlayer1" Content="Move" HorizontalAlignment="Left" Margin="297,73,0,0" VerticalAlignment="Top" Width="75" Click="btnMovePlayer1_Click"/>
+        <ListBox x:Name="lbxPlayer1" HorizontalAlignment="Left" Height="86" Margin="90,73,0,0" VerticalAlignment="Top" Width="119"/>
+        <ListBox x:Name="lbxPlayer2" HorizontalAlignment="Left" Height="101" Margin="90,170,0,0" VerticalAlignment="Top" Width="119"/>
+        <ListBox x:Name="lbxPlayer3" HorizontalAlignment="Left" Height="86" Margin="90,276,0,0" VerticalAlignment="Top" Width="119"/>
+        <ListBox x:Name="lbxPlayer4" HorizontalAlignment="Left" Height="87" Margin="90,373,0,0" VerticalAlignment="Top" Width="119"/>
+        <Button x:Name="btnRollDice" Content="Roll Dice" HorizontalAlignment="Left" Margin="272,302,0,0" VerticalAlignment="Top" Width="75" Click="btnRollDice_Click"/>
+        <Label x:Name="lblPlayer1" Content="Player One" HorizontalAlignment="Left" Margin="10,73,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnMove" Content="Move Piece" HorizontalAlignment="Left" Margin="541,307,0,0" VerticalAlignment="Top" Width="75" Click="btnMove_Click"/>
+        <ListBox x:Name="lbxMain" HorizontalAlignment="Left" Height="170" Margin="272,101,0,0" VerticalAlignment="Top" Width="344"/>
+        <Label x:Name="lblDiceValue" Content="Current Dice Value:" HorizontalAlignment="Left" Margin="436,15,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbCurrentDice" HorizontalAlignment="Left" Height="23" Margin="561,18,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="lblCurrentRollAgain" Content="Current Roll Again: " HorizontalAlignment="Left" Margin="436,46,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txbCurrentRollAgain" HorizontalAlignment="Left" Height="23" Margin="561,46,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.512,-0.387"/>
+        <Label x:Name="lblPlayer2" Content="Player Two" HorizontalAlignment="Left" Margin="10,170,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPlayer3" Content="Player Three" HorizontalAlignment="Left" Margin="10,276,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPlayer4" Content="Player Four" HorizontalAlignment="Left" Margin="10,373,0,0" VerticalAlignment="Top"/>
+        <ListBox x:Name="lbxBoard" HorizontalAlignment="Left" Height="320" Margin="272,360,0,0" VerticalAlignment="Top" Width="344"/>
 
     </Grid>
 </Window>

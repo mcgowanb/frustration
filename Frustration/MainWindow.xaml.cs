@@ -33,36 +33,43 @@ namespace Frustration
             game = new Game(n);
 
             lbxPlayer1.ItemsSource = game.players.ElementAt(0).GetAvailablePieces();
+            lbxPlayer2.ItemsSource = game.players.ElementAt(1).GetAvailablePieces();
+            lbxPlayer3.ItemsSource = game.players.ElementAt(2).GetAvailablePieces();
+            lbxPlayer4.ItemsSource = game.players.ElementAt(3).GetAvailablePieces();
 
 
-
-          //  game.PlayGame();
+            //  game.PlayGame();
         }
 
-        public void btnPlayerRoll1_Click(object sender, RoutedEventArgs e)
+        public void btnRollDice_Click(object sender, RoutedEventArgs e)
         {
-            
-        //  Start Turn - method
-        // update dice roll box with game.CurrentDiceValue
 
-       
+            //  Start Turn - method
+            // update dice roll box with game.CurrentDiceValue
+            game.StartTurn(game.currentPlayer);
 
+            txbCurrentDice.Text = Convert.ToString(game.CurrentDiceValue);
+            txbCurrentRollAgain.Text = Convert.ToString(game.rollAgain);
+            lbxMain.ItemsSource = game.currentPlayer.GetAvailablePieces();
 
+            lbxBoard.ItemsSource = game.board.locations;
             //  Populate List Box
 
-  // lbxPlayer1.ItemsSource = availablePieces;
+            // lbxPlayer1.ItemsSource = availablePieces;
 
 
         }
 
-        private void btnMovePlayer1_Click(object sender, RoutedEventArgs e)
+        private void btnMove_Click(object sender, RoutedEventArgs e)
         {
             //  Get selected item
-            Piece piece = lbxPlayer1.SelectedItem as Piece;
+            Piece piece = lbxMain.SelectedItem as Piece;
 
             //  Move selected piece
 
             game.MovePiece(piece);
+
+            lbxMain.ItemsSource = game.currentPlayer.GetAvailablePieces();
         }
     }
 }

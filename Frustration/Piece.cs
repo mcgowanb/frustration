@@ -10,7 +10,7 @@ namespace Frustration
     enum Colour { Red, Yellow, Green, Blue }
     class Piece
     {
-        
+
         public PieceState State { get; private set; }
         public int Position { get; private set; }
         public Colour Colour { get; private set; }
@@ -72,6 +72,12 @@ namespace Frustration
             Position = 0;
             return true;
         }
+
+        public override string ToString()
+        {
+            return string.Format("{0}\t {1}", State, Position);
+        }
+
 
     }
 }

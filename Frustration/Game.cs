@@ -10,10 +10,10 @@ namespace Frustration
     {
         public List<Player> players;
         List<Player> winners;
-        Board board;
+        public Board board;
         public int CurrentDiceValue { get; private set; }
-        Player currentPlayer;
-        bool rollAgain = false;
+        public Player currentPlayer;
+        public bool rollAgain = false;
 
         const int MAX_PLAYERS = 4;
         internal const int BOARD_MOVES = 28;
@@ -27,6 +27,8 @@ namespace Frustration
             dice = new Dice();
             board = new Board();
             CreatePlayers(nPlayers);
+
+            currentPlayer = players[0];
             //create players
             //take turn
             //roll dice
@@ -34,6 +36,8 @@ namespace Frustration
             //move piece
         }
 
+
+        //  Defunct - Not being called
         public void PlayGame()
         {
             while (players.Count > 1)
@@ -82,10 +86,10 @@ namespace Frustration
 
             //bool rollAgain = false;
             //should the user actually physically roll the dice
-            currentDiceValue = dice.Roll();
-            if (currentDiceValue == 6)
+            CurrentDiceValue = dice.Roll();
+            if (CurrentDiceValue == 6)
                 rollAgain = true;
-            List<Piece> availablePieces = player.GetAvailablePieces(currentDiceValue);
+            List<Piece> availablePieces = player.GetAvailablePieces(CurrentDiceValue);
 
 
             //  If nothing available
@@ -108,12 +112,13 @@ namespace Frustration
             ////player select piece here
             //Piece piece = availablePieces.ElementAt(0);
 
-            piece.Move(currentDiceValue);
+            piece.Move(CurrentDiceValue);
             //return the dice value here, as if its changing state from outside to inside then the move becomes 1 instead of 6
 
-            Piece returnPiece = board.Move(piece, currentDiceValue, currentPlayer.Offset);
+            Piece returnPiece = board.Move(piece, CurrentDiceValue, currentPlayer.Offset);
             if (returnPiece != null)
                 returnPiece.ReturnHome();
+
 
         }
 
