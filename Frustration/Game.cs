@@ -8,9 +8,14 @@ namespace Frustration
 {
     class Game
     {
-        List<Player> players;
-        List<Player> winners;
-        Board board;
+        public List<Player> Players { get; private set; }
+        public List<Player> Winners { get; private set; }
+        public Boolean RollAgain { get; private set; }
+
+        public Player CurrentPlayer { get; private set; }
+        private int playerIdx;
+        public int DiceValue { get; private set; }
+        public Board board { get; private set; }
 
         const int MAX_PLAYERS = 4;
         internal const int BOARD_MOVES = 28;
@@ -19,78 +24,62 @@ namespace Frustration
 
         public Game(int nPlayers)
         {
-            players = new List<Player>();
-            winners = new List<Player>();
+            Players = new List<Player>();
+            Winners = new List<Player>();
             dice = new Dice();
             board = new Board();
             CreatePlayers(nPlayers);
-            //create players
-            //take turn
-            //roll dice
-            //select piece
-            //move piece
+            RollAgain = false;
+            playerIdx = 0;
         }
 
-        public void PlayGame()
+        public void SetNextPlayer()
         {
-            while (players.Count > 1)
+            if (playerIdx == (Players.Count))
             {
-                foreach (var player in players)
-                {
-                    TakeTurn(player);
-                    if (player.CheckForWinner())
-                    {
-                        players.Remove(player);
-                        winners.Add(player);
-                    }
-                }
+                playerIdx = 0;
             }
-            //game over summary
-
+            CurrentPlayer = Players[playerIdx];
+            playerIdx++;
         }
+        
 
-        public void TakeTurn(Player player)
+        public void MovePiece(Piece p)
         {
-            bool rollAgain = false;
-            //should the user actually physically roll the dice
-            int diceValue = dice.Roll();
-            if (diceValue == 6)
-                rollAgain = true;
-            List<Piece> availablePieces = player.GetAvailablePieces(diceValue);
-
-            if (availablePieces.Count == 0)
+            p.Move(DiceValue);
+            Piece returned = board.Move(p, DiceValue, CurrentPlayer.Offset);
+            if(returned != null)
             {
-                return;
+                returned.ReturnHome();
             }
-            //player select piece here
-            Piece piece = availablePieces.ElementAt(0);
-
-            piece.Move(diceValue);
-            //return the dice value here, as if its changing state from outside to inside then the move becomes 1 instead of 6
-
-            Piece returnPiece = board.Move(piece, diceValue, player.Offset);
-            if (returnPiece != null)
-                returnPiece.ReturnHome();
-
-            if (rollAgain)
-                TakeTurn(player);
-            //if piece state has changed from playing to home, remove from the board else do nothing on the board
-            //move on the board
         }
 
-        public void AddPlayer(Colour c)
+        public void RollDice()
         {
-            if (players.Count < MAX_PLAYERS)
+            RollAgain = false;
+            DiceValue = dice.Roll();
+            if (DiceValue == 6)
+                RollAgain = true;
+        }
+
+
+        public List<Piece> DisplayAvailablePieces()
+        {
+            try
             {
-                Player p = new Player(c, GetPlayerOffset());
-                players.Add(p);
+                List<Piece> availablePieces = CurrentPlayer.GetAvailablePieces(DiceValue);
+                return availablePieces;
+            }
+            catch (NullReferenceException ex)
+            {
+                return null;
             }
         }
 
         private int GetPlayerOffset()
         {
             int offset = 0;
-            switch (players.Count)
+            switch (Players.Count)
             {
                 case 1:
                     offset = 7;
@@ -113,7 +102,7 @@ namespace Frustration
             Colour[] colours = { Colour.Blue, Colour.Green, Colour.Red, Colour.Yellow };
             for (int i = 0; i < n; i++)
             {
-                players.Add(new Player(colours[i], GetPlayerOffset()));
+                Players.Add(new Player(colours[i], GetPlayerOffset(), "Player " + (i + 1)));
             }
         }
 

@@ -12,12 +12,13 @@ namespace Frustration
 
         public List<Piece> pieces { get; private set; }
         public int Offset { get; private set; }
-        public int MyProperty { get; set; }
+        public String Name { get; private set; }
 
-        public Player(Colour c, int offset)
+        public Player(Colour c, int offset, string name)
         {
             //record colour in player
             pieces = new List<Piece>();
+            Name = name;
             Offset = offset;
             CreatePieces(c);
         }
