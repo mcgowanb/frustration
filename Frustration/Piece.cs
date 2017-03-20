@@ -10,7 +10,7 @@ namespace Frustration
     enum Colour { Red, Yellow, Green, Blue }
     class Piece
     {
-        
+
         public PieceState State { get; private set; }
         public int Position { get; private set; }
         public Colour Colour { get; private set; }

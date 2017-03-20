@@ -29,7 +29,7 @@ namespace Frustration
                 absoluteMove -= locations.Length;
             }
             //handle out of bounds exception if offset is 0
-            if(absoluteMove - diceValue > 0)
+            if (absoluteMove - diceValue > 0)
                 locations[absoluteMove - diceValue] = null;
             Piece boardPiece = locations[absoluteMove];
 
@@ -60,7 +60,7 @@ namespace Frustration
             return l;
         }
 
-      
+
 
 
     }

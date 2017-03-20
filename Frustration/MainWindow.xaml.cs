@@ -28,7 +28,6 @@ namespace Frustration
 
         private void btnNewGame_Click(object sender, RoutedEventArgs e)
         {
-            //int n = Convert.ToInt32(txtNoPlayers.Text);
             game = new Game(4);
             btnRollDice.IsEnabled = true;
 
@@ -40,7 +39,6 @@ namespace Frustration
 
             game.SetNextPlayer();
             lblCurrent.Content = "Current Player: " + game.CurrentPlayer.Name;
-
         }
 
         private void btnRollDice_Click(object sender, RoutedEventArgs e)
@@ -57,7 +55,6 @@ namespace Frustration
             {
                 lbxCurrentPlayer.ItemsSource = game.DisplayAvailablePieces();
             }
-
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -96,7 +93,6 @@ namespace Frustration
             lbxP3.Items.Refresh();
             lbxP3.Items.Refresh();
             lbxBoard.ItemsSource = game.board.DisplayBoard();
-
         }
 
         private void lbxPlayer_SelectionChanged(object sender, SelectionChangedEventArgs e)

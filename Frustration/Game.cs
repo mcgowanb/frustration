@@ -42,13 +42,13 @@ namespace Frustration
             CurrentPlayer = Players[playerIdx];
             playerIdx++;
         }
-        
+
 
         public void MovePiece(Piece p)
         {
             p.Move(DiceValue);
             Piece returned = board.Move(p, DiceValue, CurrentPlayer.Offset);
-            if(returned != null)
+            if (returned != null)
             {
                 returned.ReturnHome();
             }
