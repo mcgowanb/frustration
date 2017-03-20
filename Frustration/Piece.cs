@@ -47,6 +47,7 @@ namespace Frustration
         public Boolean IsAvailable(int diceRoll)
         {
             bool available = false;
+            
 
             if (State.Equals(PieceState.Home) && diceRoll == 6)
             {
@@ -75,7 +76,7 @@ namespace Frustration
 
         public override string ToString()
         {
-            return string.Format("{0}\t {1}", State, Position);
+            return string.Format("{0}\t {1} {2}", State, Position, Colour);
         }
 
 

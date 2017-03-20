@@ -93,10 +93,10 @@ namespace Frustration
 
 
             //  If nothing available
-            if (availablePieces.Count == 0)
-            {
-                return;
-            }
+            //if (availablePieces.Count == 0)
+            //{
+            //    return;
+            //}
 
 
 

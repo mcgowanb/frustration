@@ -43,6 +43,7 @@ namespace Frustration
 
         public void btnRollDice_Click(object sender, RoutedEventArgs e)
         {
+            lbxMain.ItemsSource = game.currentPlayer.GetAvailablePieces();
 
             //  Start Turn - method
             // update dice roll box with game.CurrentDiceValue
@@ -50,7 +51,7 @@ namespace Frustration
 
             txbCurrentDice.Text = Convert.ToString(game.CurrentDiceValue);
             txbCurrentRollAgain.Text = Convert.ToString(game.rollAgain);
-            lbxMain.ItemsSource = game.currentPlayer.GetAvailablePieces();
+            lbxMain.ItemsSource = game.currentPlayer.GetAvailablePieces(game.CurrentDiceValue);
 
             lbxBoard.ItemsSource = game.board.locations;
             //  Populate List Box
