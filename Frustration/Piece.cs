@@ -47,6 +47,7 @@ namespace Frustration
         public Boolean IsAvailable(int diceRoll)
         {
             bool available = false;
+            
 
             if (State.Equals(PieceState.Home) && diceRoll == 6)
             {

@@ -32,8 +32,13 @@ namespace Frustration
             }
         }
 
-        public List<Piece> GetAvailablePieces(int diceValue)
+        public List<Piece> GetAvailablePieces(int diceValue = 0)
         {
+
+            if (diceValue == 0)
+            {
+                return pieces;
+            }
             List<Piece> availablePieces = new List<Piece>();
             foreach (var item in pieces)
             {

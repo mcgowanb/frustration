@@ -21,6 +21,7 @@ namespace Frustration
     public partial class MainWindow : Window
     {
         Game game;
+
         public MainWindow()
         {
             InitializeComponent();
