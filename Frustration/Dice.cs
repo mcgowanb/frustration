@@ -9,7 +9,7 @@ namespace Frustration
     class Dice
     {
         static Random RandomFactory;
-        const int DICE_LIMIT = 7;
+        const int DICE_LIMIT = 6;
         public Dice()
         {
             RandomFactory = new Random();
