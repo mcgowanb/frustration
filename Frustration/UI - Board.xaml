@@ -1,0 +1,874 @@
+﻿<Window x:Class="Frustration.UI___Board"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Frustration"
+        mc:Ignorable="d"
+        Title="UI___Board" Height="300" Width="300">
+    <Grid>
+        <Viewbox xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" Stretch="Uniform">
+            <Canvas Name="svg5230" Width="1481.63" Height="1489">
+                <Canvas.RenderTransform>
+                    <TranslateTransform X="0" Y="0"/>
+                </Canvas.RenderTransform>
+                <Canvas.Resources/>
+                <Canvas Name="g5228">
+                    <Canvas Name="shape51">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="18.12" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4870" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape63">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="152.766" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4875" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape75">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="287.411" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4880" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape87">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="422.057" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4885" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape99">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="556.703" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4890" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2011">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="18.12" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4895" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2113">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="152.766" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4900" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2215">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="287.411" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4905" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2317">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="422.057" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4910" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2419">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="556.703" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4915" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2521">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="18.12" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4920" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2623">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="152.766" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4925" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2725">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="287.411" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4930" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2827">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="422.057" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4935" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape2929">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="556.703" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4940" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3031">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.53" Y="22.0413"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4945" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3133">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.53" Y="156.687"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4950" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3235">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.53" Y="291.333"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4955" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3337">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.53" Y="425.978"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4960" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3439">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.53" Y="560.624"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4965" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3541">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2172.97" Y="22.0413"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4970" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3643">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2172.97" Y="156.687"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4975" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3745">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2172.97" Y="291.333"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4980" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3847">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2172.97" Y="425.978"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4985" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape3949">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2172.97" Y="560.624"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4990" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4051">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.42" Y="22.0413"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path4995" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4153">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.42" Y="156.687"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5000" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4255">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.42" Y="291.333"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5005" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4357">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.42" Y="425.978"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5010" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4559">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.63" Y="815.567"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5015" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4661">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.63" Y="950.212"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5020" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4763">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.63" Y="1084.86"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5025" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4865">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.63" Y="1219.5"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5030" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape4967">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2300.63" Y="1354.15"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5035" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5069">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2173.08" Y="815.567"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5040" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5171">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2173.08" Y="950.212"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5045" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5273">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2173.08" Y="1084.86"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5050" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5375">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2173.08" Y="1219.5"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5055" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5477">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2173.08" Y="1354.15"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5060" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5679">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.52" Y="950.212"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5065" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5781">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.52" Y="1084.86"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5070" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5883">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.52" Y="1219.5"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5075" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape5985">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2045.52" Y="1354.15"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5080" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape6187">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="946.183" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5085" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape6289">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1080.83" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5090" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape6391">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1215.47" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5095" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape6493">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1350.12" Y="-815.364"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5100" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape6595">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="811.537" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5105" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape6697">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="946.183" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5110" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape6799">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1080.83" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5115" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape68101">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1215.47" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5120" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape69103">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1350.12" Y="-687.805"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5125" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape71105">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="946.183" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5130" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape72107">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1080.83" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5135" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape73109">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1215.47" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5140" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape74111">
+                        <Canvas.RenderTransform>
+                            <TranslateTransform X="1350.12" Y="-560.246"/>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5145" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape75113">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1765.37" Y="151.61"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5150" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape76115">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1765.37" Y="286.256"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5155" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape77117">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1637.81" Y="151.61"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5160" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape78119">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1637.81" Y="286.256"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5165" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape79121">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2679.55" Y="151.61"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5170" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape80123">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2679.55" Y="286.256"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5175" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape81125">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2551.99" Y="151.61"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5180" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape82127">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2551.99" Y="286.256"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5185" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape83129">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2707.89" Y="1079.96"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5190" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape84131">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2707.89" Y="1214.6"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5195" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape85133">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2580.33" Y="1079.96"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5200" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape86135">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="2580.33" Y="1214.6"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5205" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape87137">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1779.55" Y="1083.5"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5210" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape88139">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1779.55" Y="1218.15"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5215" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape89141">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1651.99" Y="1083.5"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5220" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                    <Canvas Name="shape90143">
+                        <Canvas.RenderTransform>
+                            <TransformGroup>
+                                <RotateTransform Angle="90"/>
+                                <TranslateTransform X="1651.99" Y="1218.15"/>
+                            </TransformGroup>
+                        </Canvas.RenderTransform>
+                        <Path xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" Name="path5225" Fill="#000000">
+                            <Path.Data>
+                                <PathGeometry Figures="M0 1432.3 A56.6929 56.6929 0 0 1 113.39 1432.3 A56.6929 56.6929 0 1 1 0 1432.3 Z" FillRule="NonZero"/>
+                            </Path.Data>
+                        </Path>
+                    </Canvas>
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+
+    </Grid>
+</Window>
